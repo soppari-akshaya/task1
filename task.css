@@ -1,0 +1,15 @@
+.one{
+    background-color:yellow;
+    border:solid black;
+}
+.two{
+    background-color:orange;
+    border:solid black;
+}
+.task{
+    background-color:cornflowerblue;
+    text-align:center;
+    width:200px;
+    height:150px;
+    padding-top:25px;
+}

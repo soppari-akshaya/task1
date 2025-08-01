@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+   <div class="task"> 
+    <p>Adults Plain Cotton T-Shirt</p>
+    <p>Price:$7.99</p>
+    <button type="button" class="one"   onclick="myfun()">Add to cart</button> <!-- or  onclick=alert("Added")-->
+    <button type="button" class="two" onclick="myfunc()">Buy now</button> <!--  or  onclick=alert("Purchased")-->
+   </div> 
+    <script>
+        console.log("Welcome!");
+        function myfun(){
+             window.alert("Added");
+             }
+        function myfunc()
+        {
+            window.alert("Purchased");
+        }
+         
+    </script>
+</body>
+</html>

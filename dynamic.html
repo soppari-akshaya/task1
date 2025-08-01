@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        //creating h1 element
+        let h1Element=document.createElement("h1");
+        h1Element.textContent="Web Technologies";
+
+        //getting the container
+        let containerElement=document.getElementById("container");
+
+        //adding h1 into container
+        containerElement.appendChild(h1Element);
+        
+        //creating button element
+        let btnElement=document.createElement("button");
+        btnElement.textContent="change heading";
+
+        //adding button into container
+        containerElement.appendChild(btnElement);
+        
+        //changing the content
+        btnElement.onclick=function()
+        {
+            h1Element.textContent="Front End development";
+        };
+    </script>
+</body>
+</html>

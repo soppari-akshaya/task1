@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        const person={
+            name:"Akshaya",
+            age:"19",
+            city:"Godavarikhani",
+            cricketer:{
+                score1:10,
+                score2:20,
+                score3:30,
+                total:function()
+                {
+                    return (this.score1+this.score2+this.score3);
+                }
+            }
+        };
+        console.log(person.name);
+        console.log(person.cricketer.score3);
+        console.log("total score is:"+person.cricketer.total());
+
+        //Task to check Eligibilty according to the score
+        let score=prompt("Enter your score");
+        if(score>=100)
+        {
+            console.log("Eligible");
+        }
+        else{
+            console.log("Not Eligible");
+        }
+    </script>
+</body>
+</html>

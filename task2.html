@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+   <div class="cart"> 
+    <button type="button" onclick="quantity()">Quantity</button>
+    <button type="button" onclick="add()">Add to cart</button>
+    <button type="button" onclick="fun1()">+2</button>
+    <button type="button" onclick="fun2()">+3</button>
+    <button type="button" onclick="reset()">Reset cart</button>
+    <button type="button" onclick="fun3()">+4</button>
+    <button type="button" onclick="fun4()">+5</button>
+    <button type="button" onclick="remove()">Remove from cart</button>
+   </div>
+    <script>
+        let a=0;
+        function quantity()
+        {
+           console.log("Cart quantity:"+a)
+        }
+        function add()
+        {
+            a+=1;
+            console.log("Cart quantity:"+a);
+             
+           
+
+        }
+        function fun1()
+        {
+            a+=2;
+            console.log("Cart quantity:"+a);
+             
+             
+
+        }
+        function fun2()
+        {
+            a+=3;
+            console.log("Cart quantity:"+a);
+             
+             
+
+        }
+        function reset()
+        {
+            a=0;
+            console.log("Cart quantity:"+a);
+             
+        }
+        function fun3()
+        {
+            a+=4;
+            console.log("Cart quantity:"+a);
+
+        }
+        function fun4()
+        {
+            a+=5;
+            console.log("Cart quantity:"+a);
+
+        }
+        function remove()
+        {
+            a-=1;
+            console.log("Cart quantity:"+a);
+
+        }
+         
+
+    </script>
+</body>
+</html>

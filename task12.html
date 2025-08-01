@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task12.css">
+</head>
+<body>
+    <div></div>
+   <div id="container"></div>
+   <script>
+    function addToDoItem(labelText){
+
+    const todoItem=document.createElement("div");
+    todoItem.className="todo-item";
+
+    const checkboxElement=document.createElement("input");
+    checkboxElement.type="checkbox";
+
+    const labelElement=document.createElement("label");
+    labelElement.textContent=labelText;
+    labelElement.className="todo-label";
+
+    const deleteBtn=document.createElement("button");
+    deleteBtn.textContent="❌";
+    deleteBtn.className="delete-btn";
+
+     
+    todoItem.appendChild(checkboxElement);
+    todoItem.appendChild(labelElement);
+    todoItem.appendChild(deleteBtn);
+
+    const containerElement=document.getElementById("container");
+    containerElement.appendChild(todoItem);
+
+   
+    deleteBtn.onclick=function()
+    {
+        containerElement.removeChild(todoItem);
+         
+    }
+
+    checkboxElement.onclick=function()
+    {
+        if(checkboxElement.checked){
+            labelElement.classList.add('strike');
+        }
+        else{
+            labelElement.classList.remove('strike');
+        
+    }
+}
+}
+addToDoItem("HTML Document");
+addToDoItem("JAVA Document");
+addToDoItem("PYTHON Document");
+
+
+//to print different to do items by using array we create it as
+// let todolist=[
+//     {
+//         text:"HTML Document",uniqueNo:1;
+//     }
+//      {
+//         text:"JAVA Document",uniqueNo:2;
+//     }
+//      {
+//         text:"PYTHON Document",uniqueNo:3;
+//     }
+// ];
+// in function it will be: function addToDoItem(todo){}
+// labelElement.textContent=todo.text;
+// we call array as
+// addToDoItem(todolist[0]);
+// addToDoItem(todolist[1]);
+// addToDoItem(todolist[2]);
+//TO GIVE UNIQUE CHECKBOXID'S
+//let checkboxID="checkbox"+todo.uniqueNo;
+//checkbox.id=checkboxID;
+//label.setAttribute("for",checkboxID);
+//
+
+</script> 
+</body>
+</html>

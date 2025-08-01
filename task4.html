@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function car(brand,model,price,){
+            this.brand=brand;
+            this.model=model;
+            this.price=price;
+            this.showDetails = function() 
+            {
+              console.log("Car Name: " + this.brand);
+              console.log("Model: " + this.model);
+              console.log("Price: " + this.price);
+           };
+        }
+        const car1=new car("BMW","sDrive",62.6 );
+        const car2=new car("Tata-Nexon","Fearless",13.0 );
+        const car3=new car("Hyundai-Creta","SX-(O)-Turbo-DCT",18.7 );
+        
+        car1.showDetails();
+        car2.showDetails();
+        car3.showDetails();
+    </script>
+</body>
+</html>
