@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+    <textarea id="message"></textarea><br>
+    <button id="save">Save</button>
+    <script>
+        let textareaElement=document.getElementById("message");
+        let savebutton=document.getElementById("save")
+         savebutton.onclick=function(){
+            let text=textareaElement.value;
+            localStorage.setItem("text",text);
+
+         }
+          let storedtext=localStorage.getItem("text");
+          if(storedtext===null){
+            textareaElement.value="";
+          }
+          else{
+            textareaElement.value=storedtext;
+          }
+    </script>
+</body>
+</html>
